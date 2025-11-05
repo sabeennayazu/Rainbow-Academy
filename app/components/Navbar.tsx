@@ -46,10 +46,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/programs"
+              href="/events"
               className="hover:text-blue-600 transition-colors duration-200"
             >
-              Programs
+              News & Events
             </Link>
           </li>
           <li>

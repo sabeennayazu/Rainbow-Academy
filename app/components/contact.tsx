@@ -15,7 +15,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="min-h-screen bg-white text-black flex flex-col md:flex-row bg-gray-100 px-8 md:px-16 pt-16 ">
+    <section className="min-h-screen text-black flex flex-col md:flex-row bg-gray-100 px-8 md:px-16 pt-16 ">
       
       {/* Left: Contact Form */}
       <div className="md:w-1/2 md:pr-12 mb-12 md:mb-0 shadow">

@@ -18,80 +18,80 @@ export default function ContactPage() {
       </section>
 
       {/* ===== Contact Info ===== */}
-      <section className="max-w-6xl mx-auto bg-white px-6 py-20 grid md:grid-cols-2 gap-10 relative z-10 -mt-12 rounded-t-3xl shadow-lg">
-        {/* Info Section */}
-        <div className="space-y-4 px-10">
-          <h2 className="text-4xl font-bold text-blue-700 mb-6">Get in Touch</h2>
-          <p className="text-lg text-gray-700">
-            We’d love to hear from you! Whether you have questions, feedback,
-            or want to visit our campus, we’re always here to help.
-          </p>
+      <section className="max-w-6xl mx-auto px-6 py-20 relative z-10 -mt-30 bg-white rounded-t-3xl shadow-md">
+       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12">
+  {/* Info Section */}
+  <div className="space-y-6">
+    <h2 className="text-4xl font-bold text-orange-500">Get in Touch</h2>
+    <p className="text-lg text-gray-700">
+      We’d love to hear from you! Whether you have questions, feedback,
+      or want to visit our campus, we’re always here to help.
+    </p>
 
-          <div className="space-y-5">
-            <div className="flex items-center gap-4">
-              <MapPin className="text-blue-600 w-6 h-6" />
-              <span>Rainbow Academy, Anantalingeshwor, Bhaktapur, Nepal</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <Phone className="text-blue-600 w-6 h-6" />
-              <span>+977-61-555123 | +977-9801234567</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <Mail className="text-blue-600 w-6 h-6" />
-              <span>info@rainbowacademy.edu.np</span>
-            </div>
-            <div className="flex items-center gap-4">
-              <Clock className="text-blue-600 w-6 h-6" />
-              <span>Mon – Fri: 8:00 AM – 4:00 PM</span>
-            </div>
-          </div>
+    <div className="space-y-5">
+      <div className="flex items-center gap-4">
+        <MapPin className="text-red-500 w-6 h-6" />
+        <span>Rainbow Academy, Anantalingeshwor, Bhaktapur, Nepal</span>
+      </div>
+      <div className="flex items-center gap-4">
+        <Phone className="text-green-500 w-6 h-6" />
+        <span>+977-61-555123 | +977-9801234567</span>
+      </div>
+      <div className="flex items-center gap-4">
+        <Mail className="text-blue-600 w-6 h-6" />
+        <span>info@rainbowacademy.edu.np</span>
+      </div>
+      <div className="flex items-center gap-4">
+        <Clock className="text-gray-500 w-6 h-6" />
+        <span>Mon – Fri: 8:00 AM – 4:00 PM</span>
+      </div>
+    </div>
 
-          {/* Optional extra info */}
-          <div className="mt-8 bg-blue-50 border-l-4 border-blue-600 p-4 rounded-lg">
-            <p className="text-blue-700 font-medium">
-              Admissions Open for 2025! Visit our office for enrollment details.
-            </p>
-          </div>
-        </div>
+    <div className="mt-6 bg-orange-50 border-l-4 border-orange-500 p-4 rounded-lg">
+      <p className="text-orange-600 font-medium">
+        Admissions Open for 2025! Visit our office for enrollment details.
+      </p>
+    </div>
+  </div>
 
-        {/* Form Section */}
-        <div className="bg-white border border-gray-200 shadow-xl rounded-3xl p-8 mr-4">
-          <h3 className="text-2xl font-bold mb-6 text-blue-700">
-            Send a Message
-          </h3>
-          <form className="space-y-4">
-            <div>
-              <label className="block text-sm font-semibold mb-2">Full Name</label>
-              <input
-                type="text"
-                className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Your name"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-semibold mb-2">Email</label>
-              <input
-                type="email"
-                className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="you@example.com"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-semibold mb-2">Message</label>
-              <textarea
-                rows={4}
-                className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Write your message..."
-              ></textarea>
-            </div>
-            <button
-              type="button"
-              className="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+  {/* Form Section */}
+  <div className="bg-white border border-gray-200 shadow-xl rounded-3xl p-8">
+    <h3 className="text-2xl font-bold mb-6 text-orange-500">Send a Message</h3>
+    <form className="space-y-5">
+      <div>
+        <label className="block text-sm font-semibold mb-2">Full Name</label>
+        <input
+          type="text"
+          className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          placeholder="Your name"
+        />
+      </div>
+      <div>
+        <label className="block text-sm font-semibold mb-2">Email</label>
+        <input
+          type="email"
+          className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          placeholder="you@example.com"
+        />
+      </div>
+      <div>
+        <label className="block text-sm font-semibold mb-2">Message</label>
+        <textarea
+          rows={5}
+          className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          placeholder="Write your message..."
+        ></textarea>
+      </div>
+      <button
+        type="button"
+        className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold hover:bg-orange-700 transition"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
+
       </section>
 
       {/* ===== Map Section ===== */}

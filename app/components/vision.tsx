@@ -4,7 +4,7 @@ import React from "react";
 
 export default function VisionPage() {
   return (
-    <main className="bg-white text-gray-800 py-20 px-6 md:px-16 overflow-hidden">
+    <main className="bg-orange-50 text-gray-800 py-20 px-6 md:px-16 overflow-hidden">
       {/* Vision Section */}
       <section className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 mb-32">
         {/* Text */}

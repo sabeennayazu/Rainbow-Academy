@@ -11,14 +11,14 @@ export default function Footer() {
           <h3 className="text-xl font-bold mb-2">Follow Us</h3>
           <div className="flex gap-4">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Facebook size={24} className="hover:text-blue-600 transition" />
+              <Facebook size={26} className="hover:text-blue-600 transition" />
             </a>
             
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Instagram size={24} className="hover:text-pink-400 transition" />
+              <Instagram size={26} className="hover:text-pink-400 transition" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Linkedin size={24} className="hover:text-blue-500 transition" />
+              <Linkedin size={26} className="hover:text-blue-500 transition" />
             </a>
           </div>
         </div>

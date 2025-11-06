@@ -81,7 +81,7 @@ export default function NewsEventsPage() {
       </section>
 
       {/* ===== Achievements ===== */}
-      <section className="bg-blue-50 py-20 px-6">
+      <section className="bg-white py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center items-center gap-3 mb-8">
             <Trophy className="text-yellow-600 w-8 h-8" />

@@ -4,32 +4,24 @@ import Image from "next/image";
 
 export default function ContactPage() {
   return (
-    <main className="text-gray-800 font-[Poppins] bg-amber-50">
-      {/* ===== Hero Section ===== */}
-        <section className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden mb-20">
-      {/* Background image */}
-      <Image
-        src="/images/contact.jpg"
-        alt="Contact Banner"
-        fill
-        className="object-cover  brightness-50"
-        priority
-      />
+    <main className="text-gray-800 font-[Poppins] bg-amber-50 overflow-x-hidden">
+      {/* ===== Hero Section with Fixed Parallax Background ===== */}
+      <section className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden mb-20">
+        <div
+          className="absolute inset-0 bg-fixed bg-center bg-cover brightness-50"
+          style={{ backgroundImage: "url('/images/contact.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20"></div>
+        <h1 className="relative text-6xl font-extrabold text-white drop-shadow-lg tracking-wide z-10">
+          Contact Us
+        </h1>
+      </section>
 
-      {/* Optional gradient overlay */}
-
-      {/* Heading text */}
-      <h1 className="relative text-6xl font-extrabold text-white drop-shadow-lg tracking-wide">
-        Contact Us
-      </h1>
-    </section>
       {/* ===== Contact Info ===== */}
-      <section className="max-w-6xl mx-auto bg-white px-6 py-20 grid md:grid-cols-2 gap-10">
+      <section className="max-w-6xl mx-auto bg-white px-6 py-20 grid md:grid-cols-2 gap-10 relative z-10 -mt-12 rounded-t-3xl shadow-lg">
         {/* Info Section */}
         <div className="space-y-4 px-10">
-          <h2 className="text-4xl font-bold text-blue-700 mb-6">
-            Get in Touch
-          </h2>
+          <h2 className="text-4xl font-bold text-blue-700 mb-6">Get in Touch</h2>
           <p className="text-lg text-gray-700">
             We’d love to hear from you! Whether you have questions, feedback,
             or want to visit our campus, we’re always here to help.
@@ -67,7 +59,7 @@ export default function ContactPage() {
           <h3 className="text-2xl font-bold mb-6 text-blue-700">
             Send a Message
           </h3>
-          <form className="space-y-4 ">
+          <form className="space-y-4">
             <div>
               <label className="block text-sm font-semibold mb-2">Full Name</label>
               <input
@@ -105,9 +97,9 @@ export default function ContactPage() {
       {/* ===== Map Section ===== */}
       <section className="relative w-full h-[400px]">
         <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113066.36311492581!2d85.3002199564532!3d27.67638397683719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1086ac9677cb%3A0xf91bc405e7adddea!2sRainbow%20English%20Secondary%20School!5e0!3m2!1sen!2snp!4v1762321425688!5m2!1sen!2snp"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113066.36311492581!2d85.3002199564532!3d27.67638397683719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1086ac9677cb%3A0xf91bc405e7adddea!2sRainbow%20English%20Secondary%20School!5e0!3m2!1sen!2snp!4v1762321425688!5m2!1sen!2snp"
           className="absolute inset-0 w-full h-full border-none"
-            allowFullScreen={true}
+          allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

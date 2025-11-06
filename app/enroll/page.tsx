@@ -1,19 +1,41 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 
 export default function EnrollNowPage() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  // Creates the parallax effect
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
+
   return (
-    <div className="min-h-screen bg-[linear-gradient(135deg,#e0f7fa,#ffffff,#e3f2fd)] text-gray-900 overflow-hidden">
-      {/* Hero Section */}
+    <main className="text-gray-900 font-[Poppins] bg-[linear-gradient(135deg,#e0f7fa,#ffffff,#e3f2fd)] overflow-hidden">
+      {/* ===== Hero Section with Parallax ===== */}
       <section
-        className="relative flex flex-col items-center justify-center text-center py-24 px-6 md:px-12 overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/enroll.jpg')"
-        
-         }}
+        ref={ref}
+        className="relative flex flex-col items-center justify-center text-center py-24 px-6 md:px-12 overflow-hidden bg-cover bg-center mb-20 h-[80vh]"
       >
+        {/* Parallax background image */}
+        <motion.div
+          style={{ y }}
+          className="absolute inset-0"
+        >
+          <Image
+            src="/images/enroll.jpg"
+            alt="Enroll Background"
+            fill
+            priority
+            className="object-cover brightness-50"
+          />
+        </motion.div>
+
         {/* Overlay for readability */}
         <div className="absolute inset-0 bg-black/40"></div>
 
@@ -23,13 +45,13 @@ export default function EnrollNowPage() {
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
           className="absolute w-[700px] h-[700px] bg-cyan-200 rounded-full blur-3xl opacity-20 top-[-200px] left-[-200px]"
-        ></motion.div>
+        />
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.2, delay: 0.3 }}
           className="absolute w-[600px] h-[600px] bg-blue-200 rounded-full blur-3xl opacity-15 bottom-[-150px] right-[-150px]"
-        ></motion.div>
+        />
 
         {/* Text Content */}
         <div className="relative z-10 mt-14 pt-16">
@@ -51,26 +73,27 @@ export default function EnrollNowPage() {
             Be part of Rainbow Academy — where education meets inspiration.
             Experience growth, creativity, and a brighter future with us.
           </motion.p>
-
-          
         </div>
       </section>
-      <section className=" flex justify-center ">
-        <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="mt-10"
-          >
-            <Link
-              href="/enroll"
-              className="inline-block px-8 py-4 bg-[linear-gradient(90deg,#00bcd4,#1976d2)] text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transform transition"
-            >
-              Agree & Continue
-            </Link>
-          </motion.div></section>
 
-      {/* Image Showcase / Highlights */}
+      {/* ===== Continue Button ===== */}
+      <section className="flex justify-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          className=""
+        >
+          <Link
+            href="/enroll"
+            className="inline-block px-12 py-4 bg-[linear-gradient(90deg,#00bcd4,#1976d2)] text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transform transition"
+          >
+            Enroll Now
+          </Link>
+        </motion.div>
+      </section>
+
+      {/* ===== Image Showcase ===== */}
       <section className="py-20 px-6 md:px-12 max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">
           Explore Our Vibrant Campus
@@ -78,12 +101,12 @@ export default function EnrollNowPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            "/images/campus1.jpg",
-            "/images/classroom1.jpg",
-            "/images/activity1.jpg",
+            "/images/reception.jpg",
+            "/images/classroom.jpg",
+            "/images/corridor.jpg",
             "/images/library.jpg",
             "/images/lab.jpg",
-            "/images/sports.jpg",
+            "/images/basketball.jpg",
           ].map((src, i) => (
             <motion.div
               key={i}
@@ -102,7 +125,7 @@ export default function EnrollNowPage() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* ===== Why Choose Us ===== */}
       <section className="bg-[linear-gradient(135deg,#ffffff,#f1f8ff)] py-20 px-6 md:px-12">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-10">
@@ -135,7 +158,7 @@ export default function EnrollNowPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* ===== CTA Section ===== */}
       <section className="relative py-24 text-center text-white bg-[linear-gradient(90deg,#00acc1,#1565c0)] overflow-hidden">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
@@ -159,10 +182,10 @@ export default function EnrollNowPage() {
           </Link>
         </motion.div>
 
-        {/* Decorative circles */}
+        {/* Decorative blurred shapes */}
         <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
         <div className="absolute bottom-10 right-10 w-56 h-56 bg-white/10 rounded-full blur-3xl"></div>
       </section>
-    </div>
+    </main>
   );
 }

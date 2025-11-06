@@ -44,23 +44,21 @@ export default function NewsEventsPage() {
   ];
 
   return (
-    <main className="text-gray-800 font-[Poppins] bg-white">
-      {/* ===== Hero Section ===== */}
+    <main className="text-gray-800 font-[Poppins] bg-white overflow-x-hidden">
+      {/* ===== Hero Section with Fixed Parallax Background ===== */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <Image
-          src="/images/events.jpg"
-          alt="News Banner"
-          fill
-          className="object-cover brightness-50"
+        <div
+          className="absolute inset-0 bg-fixed bg-center bg-cover brightness-50"
+          style={{ backgroundImage: "url('/images/events.jpg')" }}
         />
-        <div className="absolute inset-0 bg-linear-to-b from-black/40 to-black/20"></div>
-        <h1 className="relative text-6xl font-extrabold text-white drop-shadow-lg tracking-wide">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20"></div>
+        <h1 className="relative text-6xl font-extrabold text-white drop-shadow-lg tracking-wide z-10">
           News & Events
         </h1>
       </section>
 
       {/* ===== School News ===== */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-6 py-20 relative z-10 -mt-12 bg-white rounded-t-3xl shadow-md">
         <div className="flex items-center gap-3 mb-8">
           <Newspaper className="text-blue-700 w-8 h-8" />
           <h2 className="text-4xl font-bold text-blue-700">Latest School News</h2>
@@ -73,12 +71,7 @@ export default function NewsEventsPage() {
               className="bg-white rounded-3xl shadow-lg p-6 hover:-translate-y-2 hover:shadow-2xl transition"
             >
               <div className="relative h-48 w-full mb-4 rounded-2xl overflow-hidden ">
-                <Image
-                  src={news.img}
-                  alt={news.title}
-                  fill
-                  className="object-cover"
-                />
+                <Image src={news.img} alt={news.title} fill className="object-cover" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{news.title}</h3>
               <p className="text-gray-600 text-sm">{news.desc}</p>
@@ -116,8 +109,6 @@ export default function NewsEventsPage() {
       {/* ===== Event Highlights (Carousel) ===== */}
       <Carousel />
 
-      
-
       {/* ===== Upcoming Events ===== */}
       <section className="bg-gray-100 py-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -131,9 +122,7 @@ export default function NewsEventsPage() {
                 className="bg-white p-6 rounded-3xl shadow-lg hover:-translate-y-2 hover:shadow-2xl transition"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-blue-700 font-bold text-xl">
-                    {event.date}
-                  </span>
+                  <span className="text-blue-700 font-bold text-xl">{event.date}</span>
                   <span className="text-gray-500 text-sm">2025</span>
                 </div>
                 <h3 className="text-lg font-semibold">{event.title}</h3>
@@ -146,9 +135,3 @@ export default function NewsEventsPage() {
     </main>
   );
 }
-
-/* === Add to globals.css ===
-.clip-hex {
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-}
-*/

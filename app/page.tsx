@@ -13,7 +13,7 @@ export default function Home() {
       {/* ===== First Background ===== */}
       <div className="fixed top-0 left-0 w-full h-screen -z-10">
         <Image
-          src="/images/background.jpg"
+          src="/images/a1.jpg"
           alt="Background"
           fill
           className="object-cover"
@@ -40,7 +40,7 @@ export default function Home() {
       {/* ===== Second Background Section (with Parallax) ===== */}
       <section
         className="h-screen w-full bg-fixed bg-center bg-cover flex flex-col justify-center items-center text-white text-center"
-        style={{ backgroundImage: "url('/images/group.jpg')" }}
+        style={{ backgroundImage: "url('/images/a5.jpg')" }}
       >
         {/* <div className="bg-black/40 absolute inset-0"></div> */}
 
@@ -59,7 +59,7 @@ export default function Home() {
       <Vision />
       <section
         className="h-screen w-full bg-fixed bg-center bg-cover flex flex-col justify-center items-center text-white text-center"
-        style={{ backgroundImage: "url('/images/group1.jpg')" }}
+        style={{ backgroundImage: "url('/images/a3.jpg')" }}
       >
         {/* <div className="bg-black/40 absolute inset-0"></div> */}
 
@@ -82,7 +82,7 @@ Dream. Learn. Achieve.          </h2>
       </section>
       <section
         className="h-screen w-full bg-fixed bg-center bg-cover flex flex-col justify-center items-center text-white text-center"
-        style={{ backgroundImage: "url('/images/group3.jpg')" }}
+        style={{ backgroundImage: "url('/images/a7.jpg')" }}
       >
         {/* <div className="bg-black/40 absolute inset-0"></div> */}
 

@@ -5,19 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const slidesData = [
   {
-    img: "/images/champion1.jpg",
-    title: "National Debate Champion",
-    desc: "Our students won the National Debate Competition 2025, showcasing excellence in public speaking and critical thinking.",
+    img: "/images/a6.jpg",
+    title: "Science Fair Champion",
+    desc: "स्रोतकेन्द्रले आयोजना गरेको बिज्ञान प्रर्दसनिमा रेन्बो स्कुल प्रथम र क्यान्डिड स्कुल दोस्रो भएको छ",
   },
   {
-    img: "/images/champion2.jpg",
-    title: "Math Championship Winners",
-    desc: "A brilliant performance by our team in the 16th Math Championship, securing gold medals in multiple categories.",
+    img: "/images/a9.jpg",
+    title: "Poetry Competition Winner",
+    desc: "उपत्यका ब्यापी कबिता प्रतियोगितामा तृतीय स्थान हासिल गर्न सफल सुबिनालाइ हार्दिक बधाइ.",
   },
   {
-    img: "/images/champion3.jpg",
-    title: "Art & Cultural Excellence",
-    desc: "Our students excelled in the inter-school cultural fest, winning prizes in art, dance, and music competitions.",
+    img: "/images/14.jpg",
+    title: "Dance Competition Award",
+    desc: "जिल्ला प्याब्सन भक्तपुरको आयोजनामा भएको एकल नृत्य प्रतियोगितामा सहभागी ५० स्कुल मध्य सान्त्वना पुरस्कार पाउन सफल छात्रालाइ हार्दिक बधाइ साथै नृत्य निर्देशक अष्ट सरलाइ धन्यबाद",
   },
 ];
 

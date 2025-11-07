@@ -9,9 +9,9 @@ export default function ContactPage() {
       <section className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden mb-20">
         <div
           className="absolute inset-0 bg-fixed bg-center bg-cover brightness-50"
-          style={{ backgroundImage: "url('/images/contact.jpg')" }}
+          style={{ backgroundImage: "url('/images/17.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 to-black/20"></div>
         <h1 className="relative text-6xl font-extrabold text-white drop-shadow-lg tracking-wide z-10">
           Contact Us
         </h1>

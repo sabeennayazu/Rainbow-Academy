@@ -34,7 +34,7 @@ export default function AboutSection() {
      {/* Right: Image */}
 <div className="w-full md:w-1/2 relative h-[50vh] sm:h-[60vh] md:h-screen flex justify-center items-center">
   <Image
-    src="/images/about.jpg"
+    src="/images/a2.jpg"
     alt="About Rainbow Academy"
     fill
     className="object-cover object-right md:object-contain "

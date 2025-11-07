@@ -7,28 +7,28 @@ import { Newspaper } from "lucide-react";
 export default function NewsSection() {
   const newsData = [
     {
-      title: "Science Fair 2025",
-      img: "/images/fair.jpg",
+      title: "Science Fair ",
+      img: "/images/9.jpg",
       desc: "Our students displayed creativity and teamwork in this year’s science fair!",
     },
     {
-      title: "New Computer Lab",
-      img: "/images/lab.jpg",
-      desc: "A modern lab with 50 new systems has been inaugurated for grades 6–10.",
+      title: "Handwriting Improvement Training",
+      img: "/images/5.jpg",
+      desc: "Handwriting improvement training for students with the help of vedanta academy pvt. ltd.",
     },
     {
       title: "Cultural Day Success",
-      img: "/images/cultural.jpg",
+      img: "/images/53.jpg",
       desc: "An amazing day full of colors, performances, and unity among students.",
     },
     {
-      title: "Sports Day Highlights",
-      img: "/images/sports.jpg",
-      desc: "Students showed remarkable talent and team spirit in various sports events.",
+      title: "आजको बिध्यार्थीको सिकाइ उपलब्धी",
+      img: "/images/24.jpg",
+      desc: "its nice experience for them, best way to educate childhood practically.",
     },
     {
       title: "Art Exhibition",
-      img: "/images/art.jpg",
+      img: "/images/6.jpg",
       desc: "Our students’ artwork was displayed in an inspiring art exhibition.",
     },
   ];

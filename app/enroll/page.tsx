@@ -20,7 +20,7 @@ return ( <main className="text-gray-900 font-[Poppins] bg-[linear-gradient(135de
    >
 {/* Parallax background image */}
 <motion.div style={{ y }} className="absolute inset-0"> <Image
-         src="/images/enroll.jpg"
+         src="/images/1.jpg"
          alt="Enroll Background"
          fill
          priority
@@ -86,17 +86,17 @@ return ( <main className="text-gray-900 font-[Poppins] bg-[linear-gradient(135de
   {/* ===== Image Showcase ===== */}
   <section className="py-20 px-6 md:px-12 max-w-7xl mx-auto">
     <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
-      Explore Our Vibrant Campus
+      Explore the moments
     </h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {[
-        "/images/reception.jpg",
-        "/images/classroom.jpg",
-        "/images/corridor.jpg",
-        "/images/library.jpg",
-        "/images/lab.jpg",
-        "/images/basketball.jpg",
+        "/images/50.jpg",
+        "/images/13.jpg",
+        "/images/11.jpg",
+        "/images/39.jpg",
+        "/images/36.jpg",
+        "/images/26.jpg",
       ].map((src, i) => (
         <motion.div
           key={i}

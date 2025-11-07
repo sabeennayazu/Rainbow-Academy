@@ -15,18 +15,18 @@ export default function NewsEventsPage() {
 
   const newsData = [
     {
-      title: "Science Fair 2025",
-      img: "/images/fair.jpg",
+      title: "Science Fair ",
+      img: "/images/9.jpg",
       desc: "Our students displayed creativity and teamwork in this year’s science fair!",
     },
     {
-      title: "New Computer Lab",
-      img: "/images/lab.jpg",
-      desc: "A modern lab with 50 new systems has been inaugurated for grades 6–10.",
+      title: "Handwriting Improvement Training",
+      img: "/images/5.jpg",
+      desc: "Handwriting improvement training for students with the help of vedanta academy pvt. ltd.",
     },
     {
       title: "Cultural Day Success",
-      img: "/images/cultural.jpg",
+      img: "/images/53.jpg",
       desc: "An amazing day full of colors, performances, and unity among students.",
     },
   ];
@@ -49,9 +49,9 @@ export default function NewsEventsPage() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-fixed bg-center bg-cover brightness-50"
-          style={{ backgroundImage: "url('/images/events.jpg')" }}
+          style={{ backgroundImage: "url('/images/a4.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 to-black/20"></div>
         <h1 className="relative text-6xl font-extrabold text-white drop-shadow-lg tracking-wide z-10">
           News & Events
         </h1>

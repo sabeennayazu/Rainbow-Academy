@@ -25,7 +25,7 @@ export default function VisionPage() {
         <div className="md:w-1/2 relative flex justify-center">
           <div className="w-[350px] h-[350px] md:w-[450px] md:h-[450px] bg-orange-100 rounded-[60%_40%_50%_50%/60%_40%_50%_50%] overflow-hidden shadow-lg">
             <Image
-              src="/images/vision.jpg"
+              src="/images/2.jpg"
               alt="Vision"
               width={500}
               height={500}
@@ -55,7 +55,7 @@ export default function VisionPage() {
         <div className="md:w-1/2 relative flex justify-center">
           <div className="w-[350px] h-[350px] md:w-[450px] md:h-[450px] bg-blue-100 rounded-[60%_40%_50%_50%/50%_60%_40%_50%] overflow-hidden shadow-lg">
             <Image
-              src="/images/mission.jpg"
+              src="/images/38.jpg"
               alt="Mission"
               width={500}
               height={500}
